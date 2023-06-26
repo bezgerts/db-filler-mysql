@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3310/otus_db_example
+    username: root
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    encoding: UTF-8
+    locations: classpath:/db/migration
+    validate-on-migrate: true
+    baseline-on-migrate: true
+
